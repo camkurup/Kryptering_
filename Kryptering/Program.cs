@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Kryptering.Encrypter encrypter= new Kryptering.Encrypter();
+
+
+var input = Console.ReadLine();
+var incrpyted = encrypter.Encrypt(input);
+var decrypting = encrypter.Decrypt(incrpyted);
+
+Console.WriteLine(incrpyted);
+Console.WriteLine(decrypting);
+
